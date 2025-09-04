@@ -1,0 +1,156 @@
+/* =========================
+   Khalil's Portfolio — styles.css
+   Classic Black & White theme
+   ========================= */
+
+/* ---- Theme (grays) ---- */
+:root{
+    --bg: #0a0a0a;          /* near-black */
+    --bg-2: #111;           /* header/footer backdrop */
+    --surface: #141414;     /* section background */
+    --card: #181818;        /* card background */
+    --text: #f2f2f2;        /* primary text */
+    --muted: #b5b5b5;       /* secondary text */
+    --line: #2a2a2a;        /* borders/dividers */
+    --accent: #ffffff;      /* white for accents */
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  /* ---- Reset / base ---- */
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  
+  /* ---- Typography ---- */
+  body{
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg) 0%, #000 100%);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1,h2,h3{ line-height:1.2; margin:0 0 12px; color: var(--accent); }
+  h1{ font-size: 40px; }
+  h2{ font-size: 26px; margin-top: 4px; }
+  p{ margin: 0 0 14px; color: var(--text); }
+  .lead{ color: var(--muted); font-size: 18px; }
+  .accent{ font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; }
+  
+  /* ---- Layout helpers ---- */
+  .section{ padding: 64px 20px; max-width: 1100px; margin: 0 auto; }
+  .container{ max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  
+  /* ---- Header / Nav ---- */
+  .site-header{
+    position: sticky; top: 0; z-index: 20;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header .container,
+  .site-header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 14px 20px;
+  }
+  .logo{
+    color: var(--accent); text-decoration: none; font-weight: 700; letter-spacing: .2px;
+  }
+  .nav a{
+    color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 10px;
+    margin-left: 6px;
+  }
+  .nav a:hover, .nav a:focus-visible{
+    background: #1b1b1b; color: var(--accent);
+  }
+  .menu-toggle{
+    display: none; border: 1px solid var(--line); background: transparent; color: var(--text);
+    padding: 8px 12px; border-radius: 10px;
+  }
+  
+  /* ---- Hero ---- */
+  .hero{ padding: 96px 20px 32px; max-width: 1100px; margin: 0 auto; }
+  .hero h1{ margin-bottom: 10px; }
+  .cta{ display:flex; gap:12px; flex-wrap:wrap; }
+  .btn{
+    display:inline-block; padding: 10px 16px; border-radius: 999px;
+    background: var(--accent); color: #000; text-decoration:none; font-weight:600;
+    border: 1px solid transparent; box-shadow: 0 8px 20px rgba(255,255,255,.06);
+  }
+  .btn.secondary{
+    background: transparent; color: var(--accent); border: 1px solid var(--line);
+  }
+  .btn:hover{ filter: brightness(92%); }
+  
+  /* ---- Skills / Pills ---- */
+  .skills{
+    display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none;
+    margin-top: 12px;
+  }
+  .skills li{
+    padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+    background:#0f0f0f; color: var(--muted);
+  }
+  
+  /* ---- Projects Grid ---- */
+  .grid.projects{
+    display:grid; gap:20px; grid-template-columns: repeat(3, 1fr);
+  }
+  .card{
+    background: var(--card); border:1px solid var(--line); border-radius: var(--radius);
+    overflow:hidden; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .card:hover{ transform: translateY(-4px); box-shadow: var(--shadow); border-color:#333; }
+  .card img{ width:100%; height: 180px; object-fit: cover; background:#0f0f0f; }
+  .card-body{ padding:16px; }
+  .card h3{ margin:0 0 8px; font-size: 18px; }
+  .card p{ margin:0 0 12px; color: var(--muted); }
+  .tags{ list-style:none; padding:0; margin:0 0 12px; display:flex; gap:8px; flex-wrap:wrap; }
+  .tags li{ font-size:12px; padding:4px 8px; background:#0f0f0f; border:1px solid var(--line); border-radius:999px; }
+  .links a{ margin-right:12px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .links a:hover{ text-decoration-thickness: 2px; }
+  
+  /* ---- About / Capabilities ---- */
+  #about{ background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  
+  /* ---- Contact ---- */
+  #contact a{ text-decoration: underline; text-underline-offset: 3px; color: var(--accent); }
+  
+  /* ---- Footer ---- */
+  .site-footer{
+    background: var(--bg-2); border-top: 1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; padding: 18px 20px;
+  }
+  .site-footer small{ color: var(--muted); }
+  
+  /* ---- Mobile ---- */
+  @media (max-width: 900px){
+    .grid.projects{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px){
+    .grid.projects{ grid-template-columns: 1fr; }
+    .menu-toggle{ display:inline-block; }
+    .nav{
+      display:none; position:absolute; right:20px; top:60px; background:#0f0f0f;
+      border:1px solid var(--line); border-radius:12px; padding:8px; width: 180px;
+    }
+    .nav.open{ display:block; }
+    .nav a{ display:block; margin:2px 0; }
+  }
+  
+  /* ---- Subtle animations (respect preferences) ---- */
+  @media (prefers-reduced-motion: no-preference){
+    .card{ transform: translateY(0); }
+    .card:hover{ transform: translateY(-4px); }
+    html{ scroll-behavior: smooth; }
+  }
+  
+  /* ---- Print (simple B/W) ---- */
+  @media print{
+    *{ box-shadow:none !important; text-shadow:none !important; background: #fff !important; color:#000 !important; }
+    .menu-toggle, .nav{ display:none !important; }
+    a{ text-decoration: none; color:#000; }
+    .card img{ height:auto; }
+  }
+  

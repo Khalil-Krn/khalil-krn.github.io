@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil's Portfolio</title>
+    <meta name="description" content="Portfolio website: projects, skills, and contact." />
+
+
+  <meta property="og:title" content="Khalil's Portfolio">
+  <meta property="og:description" content="Projects, skills, and contact.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Go to home">Abderraouf El Khalil Karoun</a>
+    
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+          Menu
+        </button>
+    
+        <nav id="nav" class="nav" aria-label="Primary">
+          <a href="#about">Technical Capabilities</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-labelledby="intro-heading">
+          <h1 id="intro-heading">Hi, I’m Khalil<span class="accent"></span></h1>
+          <p class="lead">
+            I am a Software Engineering student at Concordia University who is passionate about problem solving and eager to take on new challenges. 
+            Dedicated, curious, and autonomous, I enjoy learning different aspects of software engineering and applying myself fully to every project. 
+            I am currently seeking a <strong>Winter 2026</strong> internship where I can contribute with determination, grow through real-world experience, and bring value as part of a team.
+          </p>      
+          <div class="cta">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn secondary" href="Assets/Resume A.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </section>         
+    
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <h2 id="about-heading">Technical Capabilities</h2>
+            
+            <ul class="skills" aria-label="Programming Languages">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>React.js</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>Clojure</li>
+              <li>Erlang</li>
+              <li>SQL</li>
+              <li>C++</li>
+            </ul>
+            <ul class="skills" aria-label="Software and Tools">
+              <li>Eclipse</li>
+              <li>Visual Studio Code</li>
+              <li>IntelliJ IDEA</li>
+              <li>KiCad</li>
+              <li>Power BI</li>
+              <li>Word</li>
+              <li>Excel</li>
+              <li>PowerPoint</li>
+              <li>OneDrive</li>
+              <li>Teams</li>
+              <li>Visual Studio</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>MySQL</li>
+              <li>PHPMyAdmin</li>
+              <li>Azure</li>
+              <li>AutoCAD</li>
+              <li>Microsoft Office Suite</li>
+            </ul>
+          </section>
+          <section id="projects" class="section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="grid projects">
+              
+              <article class="card" data-tags="java">
+                <img src="Assets/Images/Chessboard.png" alt="Chess Game screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Chess Game</h3>
+                  <p>A Java-based chess game demonstrating game logic, move validation, and UI handling (console or GUI).</p>
+                  <ul class="tags"><li>Java</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/Chess-Game" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+              <article class="card" data-tags="html">
+                <img src="Assets/Images/AdoptionShelterWebsite.png" alt="Adoption Center website screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Adoption Center Website</h3>
+                  <p>Static HTML site for an animal adoption center, demonstrating layouts, accessibility, and responsive design.</p>
+                  <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>NodeJS</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/WebSite-Adoption-center-" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+              <article class="card" data-tags="java">
+                <img src="Assets/Images/EmployeeTracker.png" alt="Employee Tracker salary tool screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Employee Tracker (Salary)</h3>
+                  <p>Simple java tool to manage employee salaries, showcasing command-line interaction or data handling logic.</p>
+                  <ul class="tags"><li>Java</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/Employee-tracker-salary" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+              <article class="card" data-tags="java">
+                <img src="Assets/Images/Bookstore.png" alt="Bookstore Inventory Management screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Bookstore Inventory Management</h3>
+                  <p>Java application to manage bookstore inventory—CRUD operations, persistence, and business logic.</p>
+                  <ul class="tags"><li>Java</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/Inventory-Management-BookStore" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+              <article class="card" data-tags="java">
+                <img src="Assets/Images/CarCompany.png" alt="Rental Car Company system screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Rental Car Company</h3>
+                  <p>A Java-based system simulating a rental car service with booking logic, data tracking, and object modeling.</p>
+                  <ul class="tags"><li>Java</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/Rental-Car-Company" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+              <article class="card" data-tags="java">
+                <img src="Assets/Images/TariffTracker.png" alt="Tariff Tracker countries app screenshot" loading="lazy" />
+                <div class="card-body">
+                  <h3>Tariff Tracker (Countries)</h3>
+                  <p>Java project to track tariffs between countries—focus on data processing, comparisons, and structured output.</p>
+                  <ul class="tags"><li>Java</li></ul>
+                  <div class="links">
+                    <a href="https://github.com/Khalil-Krn/Tariff-tracker-countries" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </article>
+          
+            </div>
+          </section>          
+          
+    
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:Khalilkrn.l17@gmail.com">Khalilkrn.L17@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://github.com/Khalil-Krn" target="_blank" rel="noopener">GitHub</a>
+            ·
+            <a href="https://www.linkedin.com/in/khalil-karoun/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </section>
+      </main>
+    
+      <footer class="site-footer">
+        <small> <span id="year"></span> Khalil</small>
+      </footer>
+      <script src="main.js"></script>
+</body>
+</html>
